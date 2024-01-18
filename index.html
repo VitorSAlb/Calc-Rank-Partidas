@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+
+    <title>Desafio 01 - DIO</title>
+</head>
+<body>
+
+    <main>
+        <h1>Vamos descobrir o seu Rank!</h1>
+
+        <div class="form-container">
+            <div class="form-section">
+                <label for="name">Coloque aqui as <strong>vitorias</strong> do seu Heroi:</label>
+                <input type="number" id="wins" name="wins" value=""/>
+
+                <label for="xp">Coloque aqui as <strong>derrotas</strong> do seu Heroi:</label>
+                <input type="number" id="def" name="def" value=""/>
+
+                <button onclick="hero()">Enviar</button>
+            </div>
+
+            <div class="hero-section">
+                <div class="hero-info">
+                    <div class="hero-name">
+                        <label>Quantidade de vitorias x derrotas:</label>
+                        <h3 id="saldoV">V x D</h3>
+                    </div>
+                    
+                    <div id="hero-rank">
+                        <label>Rank:</label>
+                    <h3 id="rankHeroi">Branco</h3>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+
+    </main>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
